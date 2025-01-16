@@ -35,8 +35,8 @@ const GlowingProfile = () => {
       {/* Profile picture container */}
       <div className="relative w-full h-full overflow-hidden rounded-full ring-1 ring-green-400/30 pointer-events-none select-none">
         <Image
-          src="/profile_pic.png"
-          alt="Piyush Choudhari"
+          src="/profile_pic.jpeg"
+          alt="Harsh Satarkar"
           layout="fill"
           objectFit="cover"
           priority

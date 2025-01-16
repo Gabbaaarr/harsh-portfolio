@@ -10,19 +10,19 @@ const SocialLinks: React.FC = () => {
     <div className="flex flex-row justify-center items-center space-x-4 sm:space-x-4 border-2 bg-black bg-opacity-10 p-2 sm:p-4 rounded-3xl overflow-x-auto shadow-lg transition-shadow hover:shadow-2xl">
       <ResumeButton />
       <div className="group relative">
-        <a
+        {/* <a
           href="https://github.com/capybara-brain346"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-400 hover:text-white transition-transform transform hover:scale-125 hover:rotate-12"
         >
           <FaGithub size={24} />
-        </a>
+        </a> */}
       </div>
 
       <div className="group relative">
         <a
-          href="mailto:choudhari.piyush@gmail.com"
+          href="mailto:harshsasatarkar@gmail.com"
           className="text-gray-400 hover:text-white transition-transform transform hover:scale-125 hover:rotate-12"
         >
           <FaEnvelope size={24} />
@@ -30,18 +30,18 @@ const SocialLinks: React.FC = () => {
       </div>
 
       <div className="group relative">
-        <a
+        {/* <a
           href="https://x.com/piyush_yip"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-400 hover:text-white transition-transform transform hover:scale-125 hover:rotate-12"
         >
           <FaXTwitter size={24} />
-        </a>
+        </a> */}
       </div>
       <div className="group relative">
         <a
-          href="https://www.linkedin.com/in/piyush-choudhari/"
+          href="https://www.linkedin.com/in/harsh-satarkar-950794203/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-400 hover:text-white transition-transform transform hover:scale-125 hover:rotate-12"

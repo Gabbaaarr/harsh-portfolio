@@ -6,7 +6,7 @@ import Skills from "../components/Skills";
 import Experience from '../components/Experience';
 import Projects from "../components/Projects";
 import SocialLinks from "../components/SocialLinks";
-import Education from "../components/Education";
+// import Education from "../components/Education";
 import Footer from "../components/Footer";
 import Script from "next/script";
 
@@ -39,7 +39,7 @@ export default function Home() {
           <About />
           <Skills />
           <Experience />
-          <Education />
+          {/* <Education /> */}
           <Projects />
         </main>
       </div>
@@ -75,7 +75,7 @@ export default function Home() {
             <About />
             <Skills />
             <Experience />
-            <Education />
+            {/* <Education /> */}
             <Projects />
             <Footer />
           </main>

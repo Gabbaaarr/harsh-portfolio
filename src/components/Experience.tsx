@@ -14,14 +14,25 @@ interface Job {
 
 const experiences: Job[] = [
   {
-    title: "AI Engineer Intern",
+    title: "GenerativeAI Engineer",
     company: "Ronin Labs Pvt Limited",
     location: "India",
-    period: "Jan 2025 - Present",
+    period: "March 2024 - Present",
     description: [
       "",
     ],
     logo: "/ronin_labs.jpg",
+    skills: ["Python", "Transformer Technologies"]
+  },
+  {
+    title: "AI/ML Intern",
+    company: "Bosch India",
+    location: "Bengaluru, India",
+    period: "August 2023 - February 2024",
+    description: [
+      "",
+    ],
+    logo: "/bosch-logo.png",
     skills: ["Python", "Transformer Technologies"]
   },
 ];
