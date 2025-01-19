@@ -2,17 +2,15 @@ import React from "react";
 import { ChipList, SkillCategory } from "./Chips";
 
 const skills: { [key in SkillCategory]: string[] } = {
-  languages: ["Python", "Java", "SQL", "C++"],
-  frameworks: ["FastAPI", "Flask", "Langchain", "Django", "Spring Boot"],
-  backend: ["REST APIs", "Microservices"],
-  databases: ["Postgres", "MongoDB", "MySQL"],
+  languages: ["Python", "JavaScript (Familiar)"],
+  frameworks: ["FastAPI", "Flask", "Langchain", "Django", "Nodejs (Familiar)"],
+  creativeAI: ["Stable Diffusion (Automatic1111, ComfyUI, ForgeUI)","Gradio", "RunPod","FLUX", "DALL-E", "MidJourney","Runway", "KlingAI", "Kaiber", "ImmersityAI", "ElevenLabs", "Hugging Face Spaces", "FreepikAI"],
+  databases: ["MongoDB", "MySQL"],
   practices: ["Git", "GitHub"],
   cicd: [
+    "AWS",
     "Docker",
     "Vercel",
-    "Supabase",
-    "Neon",
-    "Render",
     "GitHub Actions",
     "GCP",
   ],

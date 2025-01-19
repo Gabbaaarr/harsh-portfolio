@@ -3,7 +3,7 @@ import React from "react";
 export type SkillCategory =
   | "languages"
   | "frameworks"
-  | "backend"
+  | "creativeAI"
   | "databases"
   | "practices"
   | "cicd";
@@ -16,7 +16,7 @@ interface ChipProps {
 const categoryColors: Record<SkillCategory, { bg: string; text: string }> = {
   languages: { bg: "bg-blue-500", text: "text-blue-500" },
   frameworks: { bg: "bg-green-500", text: "text-green-500" },
-  backend: { bg: "bg-purple-500", text: "text-purple-500" },
+  creativeAI: { bg: "bg-purple-500", text: "text-purple-500" },
   databases: { bg: "bg-red-500", text: "text-red-500" },
   practices: { bg: "bg-yellow-500", text: "text-yellow-500" },
   cicd: { bg: "bg-[#F5DEB3]", text: "text-white" },

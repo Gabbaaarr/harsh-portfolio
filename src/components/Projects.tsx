@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/legacy/image";
-import { FaGithub } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 import { ChipList } from "./Chips";
 
 interface Project {
@@ -8,61 +8,60 @@ interface Project {
   description: string[];
   technologies: string[];
   image: string;
-  githubLink?: string;
+  youtubeLink?: string;
 }
 
 const projects: Project[] = [
   {
-    name: "Mars Weather Data ETL Pipeline",
+    name: "AI-Film (Ended up in Top3 in Generative AI Buildathon)",
     description: [
-      "An automated ETL pipeline that extracts Mars weather data from NASA's InSight API, transforms it using Java, and loads it into MongoDB for analysis.☄️",
+      "Finalist in the Generative AI Buildathon, crafting an AI-driven film that combined seamless storytelling and visual generation, securing a top 3 spot in the highly competitive AI Film Making category. [Short film link attached below].☄️",
     ],
     technologies: [
-      "Java",
-      "MongoDB",
-      "MySQL",
-      "JDBC",
-      "Apache Airflow",
-      "Dockers",
+      "FLUX",
+      "ComfyUI",
+      "RunwayML",
+      "custom character training",
+      "LoRA Model",
     ],
-    image: "/MarsETL.png",
-    githubLink: "https://github.com/capybara-brain346/Mars-Data-ETL-Pipeline",
+    image: "/AI-Film.png",
+    youtubeLink: "https://youtu.be/u3sWBztK-k8?si=ljUmqxLyup9tyma8",
   },
   {
-    name: "RecycleNet18",
+    name: "SketchBot",
     description: [
-      "RecycleNet is a deep learning-based project designed to classify images of recyclable items into 30 distinct categories. 📦",
+      "SketchBot is a real-time selfie-to-sketch system that combines Stable Diffusion, AWS backend, and robotic arm integration to create precise, hand-drawn art at live events. 📦",
     ],
-    technologies: ["Python", "Streamlit", "Pytorch", "Ollama", "Langchain"],
-    image: "/recyclenet.png",
-    githubLink: "https://github.com/capybara-brain346/RecycleNet18",
+    technologies: ["Python", "Flask", "Stable Diffusion", "Controlnet", "LoRA Models"],
+    image: "/sketchbot.png",
+    youtubeLink: "https://drive.google.com/file/d/1e5nRCz0axtENIt8wohl9W8bdUK35V6AO/view?usp=drive_link",
   },
   {
-    name: "pokedex-api",
+    name: "Real-time AI Mirror",
     description: [
-      "Retrieve comprehensive data on your favorite Pokémon with this Restful API. 🌟 ",
+      "Built a real-time AI mirror that transforms prompts into dynamic visuals, animations, and interactive content instantly. 🌟 ",
     ],
-    technologies: ["Python", "FastAPI", "Sqlite3", "Pytest"],
-    image: "/pokemon.jpg",
-    githubLink: "https://github.com/capybara-brain346/pokedex-api",
+    technologies: ["ComfyUI", "Controlnet Models", "Huggingface", "python"],
+    image: "/realtime.png",
+    youtubeLink: "https://drive.google.com/file/d/1_3Hs5yhtIEftWdc7-ZEKes1IOJiEksWL/view?usp=sharing",
   },
   {
-    name: "SAP Stocks",
+    name: "TwitterBot",
     description: [
-      "This application provides real-time insights into stock performance, company news, and market trends through an intuitive interface and AI-powered chatbot. ⚙️",
+      "TwitterBot is an AI-powered system that generates dynamic images and witty responses using DALL-E and ChatGPT, ensuring real-time engagement with a scalable AWS backend. ⚙️",
     ],
-    technologies: ["Python", "React", "Flask", "Langchain", "Ollama"],
-    image: "/sap_stocks.png",
-    githubLink: "https://github.com/capybara-brain346/SAP-Stocks",
+    technologies: ["Python", "Twitter API", "Nodejs", "DALL-E", "Chatgpt 4o API"],
+    image: "/twitterbot.jpeg",
+    youtubeLink: "https://www.linkedin.com/posts/harsh-satarkar-950794203_teamroninlabs-oneplus-projectsuccess-activity-7217172199814680576-y4z7?utm_source=share&utm_medium=member_desktop",
   },
   {
-    name: "AI Based Resume Screener",
+    name: "VirtuLook",
     description: [
-      "An AI-powered resume screener built using Python, React, Flask, Langchain, ChromaDB, and the Gemini API. 🤖 ",
+      "Created a comfyUI workflow for VirtuLook, enabling seamless virtual try-ons by generating realistic clothing overlays from user input, ensuring a personalized and immersive experience. 🤖 ",
     ],
-    technologies: ["Python", "React", "Flask", "Langchain"],
-    image: "/resume-screener.jpg",
-    githubLink: "https://github.com/capybara-brain346/resume-screener-ai",
+    technologies: ["ComfyUI", "IDM models", "Controlnet models", "FLUX"],
+    image: "/virtulook.jpeg",
+    youtubeLink: "https://www.linkedin.com/posts/harsh-satarkar-950794203_genai-comfyui-visualtryon-activity-7256702759951851523-CZp8?utm_source=share&utm_medium=member_desktop",
   },
 ];
 
@@ -83,7 +82,7 @@ const Projects: React.FC = () => {
                     src={project.image}
                     alt={project.name}
                     width={300}
-                    height={200}
+                    height={150}
                     className="rounded-lg object-cover shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
@@ -101,15 +100,15 @@ const Projects: React.FC = () => {
                   </ul>
                   <ChipList items={project.technologies} category="frameworks" />
                   <div className="flex space-x-4 mt-4">
-                    {project.githubLink && (
+                    {project.youtubeLink && (
                       <a
-                        href={project.githubLink}
+                        href={project.youtubeLink}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center text-gray-300 hover:text-white transition-colors duration-300"
                       >
-                        <FaGithub className="mr-2" />
-                        <span>View Code</span>
+                        <FaYoutube className="mr-2" />
+                        <span>View link</span>
                       </a>
                     )}
                   </div>

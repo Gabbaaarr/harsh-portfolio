@@ -16,7 +16,7 @@ const experiences: Job[] = [
   {
     title: "GenerativeAI Engineer",
     company: "Ronin Labs Pvt Limited",
-    location: "India",
+    location: "Pune (India)",
     period: "March 2024 - Present",
     description: [
       "",
@@ -27,7 +27,7 @@ const experiences: Job[] = [
   {
     title: "AI/ML Intern",
     company: "Bosch India",
-    location: "Bengaluru, India",
+    location: "Bengaluru (India)",
     period: "August 2023 - February 2024",
     description: [
       "",
@@ -56,7 +56,7 @@ const Experience: React.FC = () => {
               </div>
               <div className="flex-grow mb-10">
                 <h3 className="text-2xl font-semibold text-gray-100">{job.title}</h3>
-                <p className="text-lg underline text-gray-300"><a href='https://www.linkedin.com/company/ronin-labs/' target="_blank">{job.company}, {job.location}</a></p>
+                <p className="text-lg underline text-gray-300">{job.company}, {job.location},</p>
                 <p className="text-gray-400">{job.period}</p>
               </div>
             </div>
