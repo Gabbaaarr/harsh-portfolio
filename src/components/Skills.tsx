@@ -4,7 +4,7 @@ import { ChipList, SkillCategory } from "./Chips";
 const skills: { [key in SkillCategory]: string[] } = {
   languages: ["Python", "JavaScript (Familiar)"],
   frameworks: ["FastAPI", "Flask", "Langchain", "Django", "Nodejs (Familiar)"],
-  creativeAI: ["Stable Diffusion (Automatic1111, ComfyUI, ForgeUI)","Gradio", "RunPod","FLUX", "DALL-E", "MidJourney","Runway", "KlingAI", "Kaiber", "ImmersityAI", "ElevenLabs", "Hugging Face Spaces", "FreepikAI"],
+  creativeAI: ["Stable Diffusion (Automatic1111, ComfyUI (Custom Workflows), ForgeUI)","Gradio", "Replicate", "Fal", "Segment", "RunPod","FLUX", "DALL-E", "MidJourney","Runway", "KlingAI", "Kaiber", "ImmersityAI", "ElevenLabs", "Hugging Face Spaces", "FreepikAI"],
   databases: ["MongoDB", "MySQL"],
   practices: ["Git", "GitHub"],
   cicd: [

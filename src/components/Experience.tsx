@@ -15,9 +15,20 @@ interface Job {
 const experiences: Job[] = [
   {
     title: "GenerativeAI Engineer",
+    company: "Bundled.Design",
+    location: "Remote",
+    period: "April 2024 - Present",
+    description: [
+      "",
+    ],
+    logo: "/bundled-design.png",
+    skills: ["Stable Diffusion", "ComfyUI (Custom Workflows", "LoRA Models"]
+  },
+  {
+    title: "GenerativeAI Engineer",
     company: "Ronin Labs Pvt Limited",
     location: "Pune (India)",
-    period: "March 2024 - Present",
+    period: "March 2024 - April 2024",
     description: [
       "",
     ],
